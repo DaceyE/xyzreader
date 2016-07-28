@@ -9,13 +9,6 @@
         <dex dex="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\pre-dexed\debug\classes-bb74bdc7ed0c304a9eb44e70e02cb52df3deca57.jar" />
     </item>
     <item
-        jar="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\exploded-aar\com.android.support\design\23.3.0\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\pre-dexed\debug\classes-c58759cd94803c369e558d17e775dfb31d83d6bd.jar" />
-    </item>
-    <item
         jar="C:\Users\Barrett\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -37,6 +30,13 @@
         <dex dex="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\pre-dexed\debug\classes-96ae356bfc2b234b350c7ac828f4acc8c85c61e9.jar" />
     </item>
     <item
+        jar="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.0.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="40e7757d9b06db670062ddb3cf5b30c129b2fd8c">
+        <dex dex="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\pre-dexed\debug\classes-91ef9d07790d845fdbe317d125eb819e69944c7e.jar" />
+    </item>
+    <item
         jar="C:\Users\Barrett\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
         jumboMode="false"
         revision="23.0.3"
@@ -56,13 +56,6 @@
         revision="23.0.3"
         sha1="d41792854b7fb173e61c2bfea5044fd47df76114">
         <dex dex="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\pre-dexed\debug\classes-4e87008aa9b49fc2c5f1b2137716d854092b4556.jar" />
-    </item>
-    <item
-        jar="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="debf30ce0a7560396b6235edef77e447006454c2">
-        <dex dex="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\pre-dexed\debug\classes-ef624ce1d61232fd72cd585fc448e8e5969947a5.jar" />
     </item>
     <item
         jar="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\classes.jar"
@@ -100,18 +93,18 @@
         <dex dex="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\pre-dexed\debug\okhttp-3.1.2-ebec020fe72c164c0b9cbe0ecd6f1fe688b0a9be.jar" />
     </item>
     <item
-        jar="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\pre-dexed\debug\classes-8af055cef89b9301d52b77880e828777b81c7dc9.jar" />
-    </item>
-    <item
         jar="C:\Users\Barrett\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
         jumboMode="false"
         revision="23.0.3"
         sha1="98476622f10715998eacf9240d6b479f12c66143">
         <dex dex="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\pre-dexed\debug\okio-1.6.0-7281820a71214604737331c584dd872d0cbc5338.jar" />
+    </item>
+    <item
+        jar="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Barrett\Desktop\xyzreader\XYZReader\build\intermediates\pre-dexed\debug\classes-8af055cef89b9301d52b77880e828777b81c7dc9.jar" />
     </item>
     <item
         jar="C:\Users\Barrett\Desktop\xyzreader\XYZReader\libs\volley.jar"
