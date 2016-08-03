@@ -18,8 +18,22 @@
 <resources>
     <color name="photo_placeholder">#ccc</color>
 
+    <!-- Theme colors chosen based on #04561A, the original app brand color -->
     <color name="theme_primary">#04561A</color>
-    <color name="theme_primary_dark">#04561A</color>
-    <color name="theme_accent">#04561A</color>
+    <color name="theme_primary_dark">#033C12</color>
+    <color name="theme_complementary">#18A23D</color>
+    <color name="theme_accent">#CA14CD</color>
+
+
+    <!-- Text colors -->
+        <!-- #000000, at aprox. 87% opacity  -->
+    <color name="primary_dark_text">#de000000</color>
+        <!-- #000000, at aprox. 54% opacity -->
+    <color name="secondary_dark_text">#8a000000</color>
+    <color name="primary_light_text">#ffffff</color>
+        <!-- #ffffff, at aprox. 70% opacity -->
+    <color name="secondary_light_text">#b3ffffff</color>
+
+
     <color name="ltgray">#ffe0e0e0</color>
 </resources>

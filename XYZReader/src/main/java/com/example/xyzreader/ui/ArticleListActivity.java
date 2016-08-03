@@ -7,10 +7,12 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.graphics.Palette;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
@@ -19,8 +21,11 @@ import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.ImageLoader;
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
 import com.example.xyzreader.data.ItemsContract;
@@ -99,7 +104,7 @@ public class ArticleListActivity extends AppCompatActivity implements
 
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
-        Adapter adapter = new Adapter(cursor);
+        Adapter adapter = new Adapter(cursor, this);
         adapter.setHasStableIds(true);
         mRecyclerView.setAdapter(adapter);
         int columnCount = getResources().getInteger(R.integer.list_column_count);
@@ -115,9 +120,11 @@ public class ArticleListActivity extends AppCompatActivity implements
 
     private class Adapter extends RecyclerView.Adapter<ViewHolder> {
         private Cursor mCursor;
+        private Context mContext;
 
-        public Adapter(Cursor cursor) {
+        public Adapter(Cursor cursor, Context context) {
             mCursor = cursor;
+            mContext = context;
         }
 
         @Override
@@ -151,10 +158,30 @@ public class ArticleListActivity extends AppCompatActivity implements
                             DateUtils.FORMAT_ABBREV_ALL).toString()
                             + " by "
                             + mCursor.getString(ArticleLoader.Query.AUTHOR));
-            holder.thumbnailView.setImageUrl(
-                    mCursor.getString(ArticleLoader.Query.THUMB_URL),
-                    ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader());
+
+            ImageLoader imageLoader = ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader();
+            String thumbUrl = mCursor.getString(ArticleLoader.Query.THUMB_URL);
+
+            holder.thumbnailView
+                    .setImageUrl(thumbUrl, imageLoader);
             holder.thumbnailView.setAspectRatio(mCursor.getFloat(ArticleLoader.Query.ASPECT_RATIO));
+
+            final LinearLayout linearLayout = holder.linearLayout;
+            imageLoader.get(thumbUrl, new ImageLoader.ImageListener() {
+                        @Override
+                        public void onResponse(ImageLoader.ImageContainer imageContainer, boolean b) {
+                            Bitmap bitmap = imageContainer.getBitmap();
+                            if (bitmap != null) {
+                                Palette p = Palette.generate(bitmap, 12);
+                                linearLayout.setBackgroundColor(p.getDarkMutedColor(0xFF333333));
+                            }
+                        }
+
+                        @Override
+                        public void onErrorResponse(VolleyError volleyError) {
+
+                        }
+                    });
         }
 
         @Override
@@ -167,12 +194,14 @@ public class ArticleListActivity extends AppCompatActivity implements
         public DynamicHeightNetworkImageView thumbnailView;
         public TextView titleView;
         public TextView subtitleView;
+        public LinearLayout linearLayout;
 
         public ViewHolder(View view) {
             super(view);
             thumbnailView = (DynamicHeightNetworkImageView) view.findViewById(R.id.thumbnail);
             titleView = (TextView) view.findViewById(R.id.article_title);
             subtitleView = (TextView) view.findViewById(R.id.article_subtitle);
+            linearLayout = (LinearLayout) view.findViewById(R.id.card);
         }
     }
 }

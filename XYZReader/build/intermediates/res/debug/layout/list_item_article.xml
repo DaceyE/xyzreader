@@ -11,6 +11,7 @@
     android:foreground="?selectableItemBackground">
 
     <LinearLayout
+        android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -33,7 +34,7 @@
             android:paddingTop="16dp"
             android:paddingRight="16dp"
             android:paddingBottom="4dp"
-            android:textColor="@color/ltgray"
+            android:textColor="@color/primary_light_text"
             android:ellipsize="end"
             android:maxLines="3" />
 
@@ -45,7 +46,7 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:paddingBottom="16dp"
-            android:textColor="#6000"
+            android:textColor="@color/secondary_light_text"
             android:maxLines="2"
             android:singleLine="false"
             android:ellipsize="end" />

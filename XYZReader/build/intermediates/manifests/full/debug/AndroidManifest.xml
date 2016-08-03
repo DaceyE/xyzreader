@@ -30,7 +30,7 @@
         <activity
             android:name="com.example.xyzreader.ui.ArticleDetailActivity"
             android:parentActivityName="com.example.xyzreader.ui.ArticleListActivity"
-            android:theme="@style/Theme.Bacon.NoActionBar" >
+            android:theme="@style/Theme.Bacon.Detail" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
