@@ -1,0 +1,13 @@
+<resources>
+    <!-- START OF list -->
+    <integer name="list_column_count">5</integer>
+
+        <!-- margins-->
+        <dimen name="card_margin">8dp</dimen>
+        <dimen name="list_side_margin">42dp</dimen>
+        <dimen name="list_toolbar_side_margin">30dp</dimen> <!-- minus 64 - 12 -->
+    <!-- END OF list -->
+
+    <!-- detail -->
+    <fraction name="max_width">65%</fraction>
+</resources>

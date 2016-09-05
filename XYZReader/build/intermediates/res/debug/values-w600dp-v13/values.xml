@@ -3,5 +3,15 @@
     <!-- From: file:/C:/Users/Barrett/Desktop/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-w600dp-v13/values-w600dp-v13.xml -->
     <eat-comment/>
     <dimen name="abc_search_view_text_min_width">192dip</dimen>
+    <!-- From: file:/C:/Users/Barrett/Desktop/xyzreader/XYZReader/src/main/res/values-w600dp/macro_layout.xml -->
+    <eat-comment/>
+    <dimen name="detail_card_top_margin">384dp</dimen>
+    <dimen name="detail_photo_height">384dp</dimen>
+    <fraction name="max_width">75%</fraction>
+    <!-- From: file:/C:/Users/Barrett/Desktop/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-w600dp-v13/values-w600dp-v13.xml -->
+    <eat-comment/>
     <integer name="abc_max_action_buttons">5</integer>
+    <!-- From: file:/C:/Users/Barrett/Desktop/xyzreader/XYZReader/src/main/res/values-w600dp/macro_layout.xml -->
+    <eat-comment/>
+    <integer name="list_column_count">4</integer>
 </resources>

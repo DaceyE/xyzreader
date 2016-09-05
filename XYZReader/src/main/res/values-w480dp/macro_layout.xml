@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- list -->
+    <integer name="list_column_count">3</integer>
+
+    <!-- detail -->
+    <fraction name="max_width">80%</fraction>
+</resources>

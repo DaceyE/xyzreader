@@ -4,4 +4,8 @@
     <eat-comment/>
     <bool name="abc_action_bar_embed_tabs_pre_jb">true</bool>
     <bool name="abc_config_allowActionMenuItemTextWithIcon">true</bool>
+    <!-- From: file:/C:/Users/Barrett/Desktop/xyzreader/XYZReader/src/main/res/values-w480dp/macro_layout.xml -->
+    <eat-comment/>
+    <fraction name="max_width">80%</fraction>
+    <integer name="list_column_count">3</integer>
 </resources>

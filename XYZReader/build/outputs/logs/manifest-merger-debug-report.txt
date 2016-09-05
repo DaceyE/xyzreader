@@ -53,6 +53,8 @@ MERGED from com.android.support:support-v4:23.3.0:22:5
 MERGED from com.android.support:support-v4:23.3.0:22:5
 MERGED from com.android.support:support-v4:23.3.0:22:5
 MERGED from com.android.support:support-v4:23.3.0:22:5
+MERGED from com.android.support:percent:23.3.0:22:5
+MERGED from com.android.support:support-v4:23.3.0:22:5
 	android:label
 		ADDED from AndroidManifest.xml:14:9
 	android:allowBackup
@@ -146,6 +148,8 @@ MERGED from com.android.support:support-v4:23.3.0:20:5
 MERGED from com.android.support:support-v4:23.3.0:20:5
 MERGED from com.android.support:support-v4:23.3.0:20:5
 MERGED from com.android.support:recyclerview-v7:23.3.0:20:5
+MERGED from com.android.support:support-v4:23.3.0:20:5
+MERGED from com.android.support:percent:23.3.0:20:5
 MERGED from com.android.support:support-v4:23.3.0:20:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
