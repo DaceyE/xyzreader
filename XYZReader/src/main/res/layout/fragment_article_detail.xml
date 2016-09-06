@@ -41,8 +41,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="@dimen/article_offset"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/article_offset"
                 android:background="#fff"
                 android:elevation="2dp"
                 android:orientation="vertical"
@@ -76,12 +76,12 @@
 
                     <TextView
                         android:id="@+id/article_byline"
-                        android:textSize="@dimen/detail_subtitle_text_size"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:autoText="false"
                         android:text="No information available"
-                        android:textColor="@color/secondary_light_text" />
+                        android:textColor="@color/secondary_light_text"
+                        android:textSize="@dimen/detail_subtitle_text_size" />
 
                 </LinearLayout>
 
@@ -114,9 +114,8 @@
         android:background="@color/theme_accent"
         android:contentDescription="@string/action_share"
         android:elevation="@dimen/fab_elevation"
-        android:translationZ="@dimen/fab_press_translation_z"
         android:src="@drawable/ic_share"
+        android:translationZ="@dimen/fab_press_translation_z"
         app:layout_anchor="@id/photo"
-        app:layout_anchorGravity="bottom|end"
-        />
+        app:layout_anchorGravity="bottom|end" />
 </android.support.design.widget.CoordinatorLayout>
